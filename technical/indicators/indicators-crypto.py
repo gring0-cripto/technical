@@ -21,10 +21,10 @@ from .overlap_studies import sma, vwma, zema
 #
 # Ichimoku Cloud
 #
-def ichimoku(dataframe, conversion_line_period=9, base_line_periods=26,
-             laggin_span=52, displacement=26):
+def ichimoku(dataframe, conversion_line_period=20, base_line_periods=60,
+             laggin_span=120, displacement=30):
     """
-    Ichimoku cloud indicator
+    Ichimoku cloud indicator (using changed settings because it's crypto)
     Note: Do not use chikou_span for backtesting.
         It looks into the future, is not printed by most charting platforms.
         It is only useful for visual analysis
